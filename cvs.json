@@ -1,0 +1,2040 @@
+{
+    "privacy_mode": "public",
+    "winrate": 0.2593,
+    "total_matches": 465,
+    "first_match_date": "2020-03-22T11:25:56.000Z",
+    "name": "CVS",
+    "bans": [],
+    "steam64_id": "76561198044837598",
+    "id": "09f97acd-5d46-4806-becf-680b8b369265",
+    "ranks": {
+        "leetify": -5.83,
+        "premier": null,
+        "faceit": null,
+        "faceit_elo": null,
+        "wingman": null,
+        "renown": null,
+        "competitive": [
+            {
+                "map_name": "de_dust2",
+                "rank": 4
+            },
+            {
+                "map_name": "de_thera",
+                "rank": 0
+            },
+            {
+                "map_name": "cs_office",
+                "rank": 0
+            },
+            {
+                "map_name": "de_anubis",
+                "rank": 0
+            },
+            {
+                "map_name": "de_mirage",
+                "rank": 0
+            },
+            {
+                "map_name": "de_ancient",
+                "rank": 0
+            },
+            {
+                "map_name": "de_inferno",
+                "rank": 0
+            },
+            {
+                "map_name": "de_vertigo",
+                "rank": 0
+            }
+        ]
+    },
+    "rating": {
+        "aim": 1.3903,
+        "positioning": 20.3269,
+        "utility": 33.5656,
+        "clutch": 0.0755,
+        "opening": -0.0839,
+        "ct_leetify": -0.0603,
+        "t_leetify": -0.0561
+    },
+    "stats": {
+        "accuracy_enemy_spotted": 20.6634,
+        "accuracy_head": 17.4491,
+        "counter_strafing_good_shots_ratio": 52.1564,
+        "ct_opening_aggression_success_rate": 12.3926,
+        "ct_opening_duel_success_percentage": 19.7074,
+        "flashbang_hit_foe_avg_duration": 2.7324,
+        "flashbang_hit_foe_per_flashbang": 0.6655,
+        "flashbang_hit_friend_per_flashbang": 0.3613,
+        "flashbang_leading_to_kill": 5.084,
+        "flashbang_thrown": 15.9466,
+        "he_foes_damage_avg": 7.959,
+        "he_friends_damage_avg": 0.4223,
+        "preaim": 16.6821,
+        "reaction_time_ms": 835.6902,
+        "spray_accuracy": 24.8092,
+        "t_opening_aggression_success_rate": 13.3102,
+        "t_opening_duel_success_percentage": 13.3102,
+        "traded_deaths_success_percentage": 43.9395,
+        "trade_kill_opportunities_per_round": 0.236,
+        "trade_kills_success_percentage": 38.6428,
+        "utility_on_death_avg": 209.2169
+    },
+    "recent_matches": [
+        {
+            "id": "bb4c0cf5-63fc-4417-b3df-e07fca92e34e",
+            "finished_at": "2025-11-09T13:11:26.000Z",
+            "data_source": "matchmaking",
+            "outcome": "tie",
+            "rank": 4,
+            "rank_type": 12,
+            "map_name": "de_dust2",
+            "leetify_rating": -0.0538,
+            "score": [
+                12,
+                12
+            ],
+            "preaim": 8.48,
+            "reaction_time_ms": 1000,
+            "accuracy_enemy_spotted": 13.58,
+            "accuracy_head": 27.27,
+            "spray_accuracy": 0
+        },
+        {
+            "id": "12c81189-332d-492f-932d-4e35d7d7d324",
+            "finished_at": "2025-11-09T12:20:06.000Z",
+            "data_source": "matchmaking",
+            "outcome": "loss",
+            "rank": 0,
+            "rank_type": 12,
+            "map_name": "de_mirage",
+            "leetify_rating": -0.0081,
+            "score": [
+                8,
+                13
+            ],
+            "preaim": 18,
+            "reaction_time_ms": 766,
+            "accuracy_enemy_spotted": 27.27,
+            "accuracy_head": 10.81,
+            "spray_accuracy": 42.86
+        },
+        {
+            "id": "1aa10118-2f33-474a-9ccc-81b46e821c9c",
+            "finished_at": "2025-11-08T17:34:34.000Z",
+            "data_source": "matchmaking",
+            "outcome": "loss",
+            "rank": 4,
+            "rank_type": 12,
+            "map_name": "de_dust2",
+            "leetify_rating": -0.0846,
+            "score": [
+                4,
+                13
+            ],
+            "preaim": 16.38,
+            "reaction_time_ms": 492,
+            "accuracy_enemy_spotted": 22.22,
+            "accuracy_head": 14.29,
+            "spray_accuracy": 0
+        },
+        {
+            "id": "8341c798-dd6f-413e-a0c6-6d8afec8f193",
+            "finished_at": "2025-11-08T09:56:48.000Z",
+            "data_source": "matchmaking",
+            "outcome": "win",
+            "rank": 4,
+            "rank_type": 12,
+            "map_name": "de_dust2",
+            "leetify_rating": -0.0492,
+            "score": [
+                13,
+                7
+            ],
+            "preaim": 14.93,
+            "reaction_time_ms": 922,
+            "accuracy_enemy_spotted": 20,
+            "accuracy_head": 42.11,
+            "spray_accuracy": 0
+        },
+        {
+            "id": "3fa32d4e-e4b5-4245-8f19-25229774b1a3",
+            "finished_at": "2024-11-23T17:45:58.000Z",
+            "data_source": "matchmaking",
+            "outcome": "loss",
+            "rank": 0,
+            "rank_type": 12,
+            "map_name": "de_inferno",
+            "leetify_rating": -0.0855,
+            "score": [
+                7,
+                13
+            ],
+            "preaim": 28.74,
+            "reaction_time_ms": 672,
+            "accuracy_enemy_spotted": 26.05,
+            "accuracy_head": 3.23,
+            "spray_accuracy": 0
+        },
+        {
+            "id": "de0f72a9-84a1-4c48-b346-c679b007b80d",
+            "finished_at": "2024-11-23T16:19:59.000Z",
+            "data_source": "matchmaking",
+            "outcome": "loss",
+            "rank": 5,
+            "rank_type": 12,
+            "map_name": "de_dust2",
+            "leetify_rating": -0.1104,
+            "score": [
+                11,
+                13
+            ],
+            "preaim": 14.67,
+            "reaction_time_ms": 969,
+            "accuracy_enemy_spotted": 16.15,
+            "accuracy_head": 30.43,
+            "spray_accuracy": 17.31
+        },
+        {
+            "id": "c57cfe63-d4b3-4403-a2b7-e48ff77a0836",
+            "finished_at": "2024-11-23T15:09:34.000Z",
+            "data_source": "matchmaking",
+            "outcome": "loss",
+            "rank": 5,
+            "rank_type": 12,
+            "map_name": "de_mirage",
+            "leetify_rating": -0.1483,
+            "score": [
+                7,
+                13
+            ],
+            "preaim": 13.6,
+            "reaction_time_ms": 1000,
+            "accuracy_enemy_spotted": 17.83,
+            "accuracy_head": 0,
+            "spray_accuracy": 33.33
+        },
+        {
+            "id": "274236ef-eea1-4955-9485-22c86ce18c64",
+            "finished_at": "2024-11-23T14:29:48.000Z",
+            "data_source": "matchmaking",
+            "outcome": "tie",
+            "rank": 6,
+            "rank_type": 12,
+            "map_name": "de_dust2",
+            "leetify_rating": -0.0482,
+            "score": [
+                12,
+                12
+            ],
+            "preaim": 15.63,
+            "reaction_time_ms": 977,
+            "accuracy_enemy_spotted": 20.49,
+            "accuracy_head": 19.23,
+            "spray_accuracy": 25
+        },
+        {
+            "id": "201d20eb-f30a-460b-bdf2-25f7e54a98b6",
+            "finished_at": "2024-11-23T12:28:01.000Z",
+            "data_source": "matchmaking",
+            "outcome": "loss",
+            "rank": 0,
+            "rank_type": 12,
+            "map_name": "de_inferno",
+            "leetify_rating": -0.0522,
+            "score": [
+                6,
+                13
+            ],
+            "preaim": 15.47,
+            "reaction_time_ms": 703,
+            "accuracy_enemy_spotted": 32.14,
+            "accuracy_head": 23.08,
+            "spray_accuracy": 0
+        },
+        {
+            "id": "01db2472-cbfe-466f-9870-c3b09596210e",
+            "finished_at": "2024-11-23T11:46:16.000Z",
+            "data_source": "matchmaking",
+            "outcome": "loss",
+            "rank": 6,
+            "rank_type": 12,
+            "map_name": "de_dust2",
+            "leetify_rating": 0.0167,
+            "score": [
+                7,
+                13
+            ],
+            "preaim": 23.59,
+            "reaction_time_ms": 938,
+            "accuracy_enemy_spotted": 21.55,
+            "accuracy_head": 9.09,
+            "spray_accuracy": 0
+        },
+        {
+            "id": "8a0f16c7-24a7-4f41-9cca-a842ba44456f",
+            "finished_at": "2024-11-16T11:17:26.000Z",
+            "data_source": "matchmaking",
+            "outcome": "win",
+            "rank": 5,
+            "rank_type": 12,
+            "map_name": "de_mirage",
+            "leetify_rating": -0.0821,
+            "score": [
+                13,
+                6
+            ],
+            "preaim": 27.58,
+            "reaction_time_ms": 984,
+            "accuracy_enemy_spotted": 16.2,
+            "accuracy_head": 10.64,
+            "spray_accuracy": 37.5
+        },
+        {
+            "id": "8e2c88f5-def6-497d-9fc5-1ffd59805402",
+            "finished_at": "2024-10-27T14:07:40.000Z",
+            "data_source": "matchmaking",
+            "outcome": "loss",
+            "rank": 6,
+            "rank_type": 12,
+            "map_name": "de_dust2",
+            "leetify_rating": -0.0378,
+            "score": [
+                7,
+                13
+            ],
+            "preaim": 19.71,
+            "reaction_time_ms": 797,
+            "accuracy_enemy_spotted": 21.62,
+            "accuracy_head": 16.67,
+            "spray_accuracy": 16.67
+        },
+        {
+            "id": "89ca5600-ecd5-4aee-b704-a3dc70bf9079",
+            "finished_at": "2024-10-27T13:35:52.000Z",
+            "data_source": "matchmaking",
+            "outcome": "win",
+            "rank": 6,
+            "rank_type": 12,
+            "map_name": "de_dust2",
+            "leetify_rating": -0.0242,
+            "score": [
+                13,
+                7
+            ],
+            "preaim": 8.88,
+            "reaction_time_ms": 961,
+            "accuracy_enemy_spotted": 24.47,
+            "accuracy_head": 40,
+            "spray_accuracy": 14.29
+        },
+        {
+            "id": "eb5af6cd-6cb1-4b9c-a3ef-f0b8f5f32858",
+            "finished_at": "2024-10-17T13:49:00.000Z",
+            "data_source": "matchmaking",
+            "outcome": "loss",
+            "rank": 5,
+            "rank_type": 12,
+            "map_name": "de_dust2",
+            "leetify_rating": -0.0979,
+            "score": [
+                5,
+                13
+            ],
+            "preaim": 24.43,
+            "reaction_time_ms": 1000,
+            "accuracy_enemy_spotted": 16.53,
+            "accuracy_head": 19.05,
+            "spray_accuracy": 28.57
+        },
+        {
+            "id": "b8256907-4075-47b4-bd5c-c44416ec0377",
+            "finished_at": "2024-10-17T13:21:09.000Z",
+            "data_source": "matchmaking",
+            "outcome": "loss",
+            "rank": 5,
+            "rank_type": 12,
+            "map_name": "de_dust2",
+            "leetify_rating": -0.108,
+            "score": [
+                3,
+                13
+            ],
+            "preaim": 13.73,
+            "reaction_time_ms": 656,
+            "accuracy_enemy_spotted": 17.07,
+            "accuracy_head": 26.67,
+            "spray_accuracy": 0
+        },
+        {
+            "id": "b714f445-5469-4b51-a41d-d493e829b9df",
+            "finished_at": "2024-10-13T07:10:23.000Z",
+            "data_source": "matchmaking",
+            "outcome": "win",
+            "rank": 5,
+            "rank_type": 12,
+            "map_name": "de_dust2",
+            "leetify_rating": 0.0053,
+            "score": [
+                13,
+                11
+            ],
+            "preaim": 12.72,
+            "reaction_time_ms": 1000,
+            "accuracy_enemy_spotted": 29.34,
+            "accuracy_head": 14.52,
+            "spray_accuracy": 40
+        },
+        {
+            "id": "cefbda65-0c4f-4032-8be6-cd0f6eb25d2a",
+            "finished_at": "2024-10-12T07:58:22.000Z",
+            "data_source": "matchmaking",
+            "outcome": "loss",
+            "rank": 5,
+            "rank_type": 12,
+            "map_name": "de_dust2",
+            "leetify_rating": -0.0914,
+            "score": [
+                5,
+                13
+            ],
+            "preaim": 15.05,
+            "reaction_time_ms": 906,
+            "accuracy_enemy_spotted": 14.41,
+            "accuracy_head": 21.74,
+            "spray_accuracy": 12.5
+        },
+        {
+            "id": "acf9ea52-b8ef-481b-af56-b493ebd2c313",
+            "finished_at": "2024-10-11T15:59:16.000Z",
+            "data_source": "matchmaking",
+            "outcome": "loss",
+            "rank": 5,
+            "rank_type": 12,
+            "map_name": "de_dust2",
+            "leetify_rating": -0.0719,
+            "score": [
+                4,
+                13
+            ],
+            "preaim": 14.25,
+            "reaction_time_ms": 969,
+            "accuracy_enemy_spotted": 19.57,
+            "accuracy_head": 17.24,
+            "spray_accuracy": 15.15
+        },
+        {
+            "id": "5d1e0471-00c9-494d-9427-29f3029b1298",
+            "finished_at": "2024-10-11T15:25:50.000Z",
+            "data_source": "matchmaking",
+            "outcome": "win",
+            "rank": 5,
+            "rank_type": 12,
+            "map_name": "de_dust2",
+            "leetify_rating": 0.0316,
+            "score": [
+                13,
+                4
+            ],
+            "preaim": 16.04,
+            "reaction_time_ms": 680,
+            "accuracy_enemy_spotted": 20,
+            "accuracy_head": 20.59,
+            "spray_accuracy": 19.05
+        },
+        {
+            "id": "68914deb-3e19-455a-864b-1501914dc3b0",
+            "finished_at": "2024-10-03T12:44:41.000Z",
+            "data_source": "matchmaking",
+            "outcome": "loss",
+            "rank": 5,
+            "rank_type": 12,
+            "map_name": "de_dust2",
+            "leetify_rating": 0.044,
+            "score": [
+                5,
+                13
+            ],
+            "preaim": 12.84,
+            "reaction_time_ms": 648,
+            "accuracy_enemy_spotted": 21.15,
+            "accuracy_head": 20.83,
+            "spray_accuracy": 11.11
+        },
+        {
+            "id": "69d2a7f3-4d66-474e-b1e3-eed102a337a6",
+            "finished_at": "2024-10-03T12:06:16.000Z",
+            "data_source": "matchmaking",
+            "outcome": "loss",
+            "rank": 5,
+            "rank_type": 12,
+            "map_name": "de_dust2",
+            "leetify_rating": -0.0591,
+            "score": [
+                9,
+                13
+            ],
+            "preaim": 12.16,
+            "reaction_time_ms": 734,
+            "accuracy_enemy_spotted": 24.77,
+            "accuracy_head": 23.33,
+            "spray_accuracy": 18.18
+        },
+        {
+            "id": "cc8cb3aa-d7b2-4c39-b14b-dd1aa20a4596",
+            "finished_at": "2024-10-03T11:42:47.000Z",
+            "data_source": "matchmaking",
+            "outcome": "loss",
+            "rank": 5,
+            "rank_type": 12,
+            "map_name": "de_dust2",
+            "leetify_rating": -0.0802,
+            "score": [
+                0,
+                13
+            ],
+            "preaim": 18.71,
+            "reaction_time_ms": 711,
+            "accuracy_enemy_spotted": 18.94,
+            "accuracy_head": 11.36,
+            "spray_accuracy": 0
+        },
+        {
+            "id": "5a8f2877-6fe9-47ca-bde7-f47600c9bcfb",
+            "finished_at": "2024-09-21T15:57:19.000Z",
+            "data_source": "matchmaking",
+            "outcome": "loss",
+            "rank": 0,
+            "rank_type": 12,
+            "map_name": "de_mirage",
+            "leetify_rating": -0.0712,
+            "score": [
+                8,
+                13
+            ],
+            "preaim": 26.84,
+            "reaction_time_ms": 930,
+            "accuracy_enemy_spotted": 23.72,
+            "accuracy_head": 4.55,
+            "spray_accuracy": 0
+        },
+        {
+            "id": "e21c4a9a-1bc6-4b8b-9f1e-006ae71da2b2",
+            "finished_at": "2024-09-21T15:15:53.000Z",
+            "data_source": "matchmaking",
+            "outcome": "win",
+            "rank": 6,
+            "rank_type": 12,
+            "map_name": "de_dust2",
+            "leetify_rating": -0.062,
+            "score": [
+                13,
+                9
+            ],
+            "preaim": 14.31,
+            "reaction_time_ms": 1000,
+            "accuracy_enemy_spotted": 15.48,
+            "accuracy_head": 16.67,
+            "spray_accuracy": 0
+        },
+        {
+            "id": "33c8796e-4558-43cd-8b75-e12111f340be",
+            "finished_at": "2024-09-07T12:57:43.000Z",
+            "data_source": "matchmaking",
+            "outcome": "win",
+            "rank": 6,
+            "rank_type": 12,
+            "map_name": "de_dust2",
+            "leetify_rating": -0.0822,
+            "score": [
+                13,
+                4
+            ],
+            "preaim": 19.35,
+            "reaction_time_ms": 859,
+            "accuracy_enemy_spotted": 12.7,
+            "accuracy_head": 6.25,
+            "spray_accuracy": 25
+        },
+        {
+            "id": "765a99c0-6310-4611-8fb7-39806099c1b0",
+            "finished_at": "2024-08-10T12:39:37.000Z",
+            "data_source": "matchmaking",
+            "outcome": "loss",
+            "rank": 5,
+            "rank_type": 12,
+            "map_name": "de_dust2",
+            "leetify_rating": -0.0665,
+            "score": [
+                6,
+                13
+            ],
+            "preaim": 14.02,
+            "reaction_time_ms": 938,
+            "accuracy_enemy_spotted": 18.99,
+            "accuracy_head": 20,
+            "spray_accuracy": 42.86
+        },
+        {
+            "id": "6341d02b-b5f6-41b8-ab9b-c7720d91b8fa",
+            "finished_at": "2024-08-10T11:57:38.000Z",
+            "data_source": "matchmaking",
+            "outcome": "loss",
+            "rank": 0,
+            "rank_type": 12,
+            "map_name": "de_mirage",
+            "leetify_rating": -0.0908,
+            "score": [
+                7,
+                13
+            ],
+            "preaim": 11.49,
+            "reaction_time_ms": 688,
+            "accuracy_enemy_spotted": 13.79,
+            "accuracy_head": 15,
+            "spray_accuracy": 0
+        },
+        {
+            "id": "9fac8553-cbbf-4cdf-a50c-b52168b8ac1f",
+            "finished_at": "2024-08-10T11:20:48.000Z",
+            "data_source": "matchmaking",
+            "outcome": "loss",
+            "rank": 0,
+            "rank_type": 12,
+            "map_name": "de_anubis",
+            "leetify_rating": -0.0478,
+            "score": [
+                6,
+                13
+            ],
+            "preaim": 20.28,
+            "reaction_time_ms": 766,
+            "accuracy_enemy_spotted": 19.63,
+            "accuracy_head": 12.12,
+            "spray_accuracy": 0
+        },
+        {
+            "id": "80e8db0f-b352-44e4-a723-91fe7f6c7ad1",
+            "finished_at": "2024-08-10T10:44:37.000Z",
+            "data_source": "matchmaking",
+            "outcome": "loss",
+            "rank": 0,
+            "rank_type": 12,
+            "map_name": "de_inferno",
+            "leetify_rating": -0.1408,
+            "score": [
+                3,
+                13
+            ],
+            "preaim": 16.59,
+            "reaction_time_ms": 484,
+            "accuracy_enemy_spotted": 17.7,
+            "accuracy_head": 4.55,
+            "spray_accuracy": 0
+        },
+        {
+            "id": "a9920734-68e2-4a63-b2d2-114d0faecca9",
+            "finished_at": "2024-08-10T10:05:30.000Z",
+            "data_source": "matchmaking",
+            "outcome": "tie",
+            "rank": 5,
+            "rank_type": 12,
+            "map_name": "de_dust2",
+            "leetify_rating": -0.0343,
+            "score": [
+                12,
+                12
+            ],
+            "preaim": 15.15,
+            "reaction_time_ms": 672,
+            "accuracy_enemy_spotted": 30.28,
+            "accuracy_head": 15.79,
+            "spray_accuracy": 0
+        },
+        {
+            "id": "41029970-7d30-4a56-bc84-8a53cd669238",
+            "finished_at": "2024-07-27T18:32:54.000Z",
+            "data_source": "matchmaking",
+            "outcome": "loss",
+            "rank": 5,
+            "rank_type": 12,
+            "map_name": "de_dust2",
+            "leetify_rating": -0.0941,
+            "score": [
+                10,
+                13
+            ],
+            "preaim": 14.44,
+            "reaction_time_ms": 969,
+            "accuracy_enemy_spotted": 22.81,
+            "accuracy_head": 16.28,
+            "spray_accuracy": 20
+        },
+        {
+            "id": "21b200f2-7458-498b-af13-4f2a9778e717",
+            "finished_at": "2024-07-27T18:02:42.000Z",
+            "data_source": "matchmaking",
+            "outcome": "loss",
+            "rank": 6,
+            "rank_type": 12,
+            "map_name": "de_dust2",
+            "leetify_rating": -0.0762,
+            "score": [
+                5,
+                13
+            ],
+            "preaim": 19.83,
+            "reaction_time_ms": 797,
+            "accuracy_enemy_spotted": 30.51,
+            "accuracy_head": 7.89,
+            "spray_accuracy": 0
+        },
+        {
+            "id": "1e2dc40b-e095-4e4d-8d7b-6eb2b37749c7",
+            "finished_at": "2024-07-27T17:04:56.000Z",
+            "data_source": "matchmaking",
+            "outcome": "loss",
+            "rank": 6,
+            "rank_type": 12,
+            "map_name": "de_dust2",
+            "leetify_rating": -0.0322,
+            "score": [
+                10,
+                13
+            ],
+            "preaim": 16.87,
+            "reaction_time_ms": 609,
+            "accuracy_enemy_spotted": 28.28,
+            "accuracy_head": 14.71,
+            "spray_accuracy": 0
+        },
+        {
+            "id": "ed4f129c-1cfe-4327-9f0d-dcfd4e3f0376",
+            "finished_at": "2024-07-19T17:37:14.000Z",
+            "data_source": "matchmaking",
+            "outcome": "loss",
+            "rank": 6,
+            "rank_type": 12,
+            "map_name": "de_dust2",
+            "leetify_rating": -0.0749,
+            "score": [
+                5,
+                13
+            ],
+            "preaim": 20.16,
+            "reaction_time_ms": 773,
+            "accuracy_enemy_spotted": 13.74,
+            "accuracy_head": 11.11,
+            "spray_accuracy": 0
+        },
+        {
+            "id": "4dcb032e-50f3-4c6c-9ceb-3fbaa7bbf3d3",
+            "finished_at": "2024-07-19T17:01:17.000Z",
+            "data_source": "matchmaking",
+            "outcome": "win",
+            "rank": 6,
+            "rank_type": 12,
+            "map_name": "de_dust2",
+            "leetify_rating": -0.0946,
+            "score": [
+                13,
+                8
+            ],
+            "preaim": 11.49,
+            "reaction_time_ms": 906,
+            "accuracy_enemy_spotted": 20.48,
+            "accuracy_head": 8.57,
+            "spray_accuracy": 100
+        },
+        {
+            "id": "602eac25-853a-4b81-a79a-c7d9335e97ca",
+            "finished_at": "2024-07-19T16:25:15.000Z",
+            "data_source": "matchmaking",
+            "outcome": "loss",
+            "rank": 0,
+            "rank_type": 12,
+            "map_name": "de_thera",
+            "leetify_rating": -0.1471,
+            "score": [
+                4,
+                13
+            ],
+            "preaim": 20.4,
+            "reaction_time_ms": 906,
+            "accuracy_enemy_spotted": 8.16,
+            "accuracy_head": 25,
+            "spray_accuracy": 0
+        },
+        {
+            "id": "fcf4fb4e-2e93-4fe3-a9fc-9469eb5f4432",
+            "finished_at": "2024-07-12T19:58:24.000Z",
+            "data_source": "matchmaking",
+            "outcome": "win",
+            "rank": 6,
+            "rank_type": 12,
+            "map_name": "de_dust2",
+            "leetify_rating": 0.0018,
+            "score": [
+                13,
+                8
+            ],
+            "preaim": 24.45,
+            "reaction_time_ms": 703,
+            "accuracy_enemy_spotted": 29.59,
+            "accuracy_head": 29.73,
+            "spray_accuracy": 0
+        },
+        {
+            "id": "d45ecad8-9cf9-44db-a0f3-e251302f318e",
+            "finished_at": "2024-07-07T11:18:07.000Z",
+            "data_source": "matchmaking",
+            "outcome": "tie",
+            "rank": 6,
+            "rank_type": 12,
+            "map_name": "de_mirage",
+            "leetify_rating": -0.0676,
+            "score": [
+                12,
+                12
+            ],
+            "preaim": 13.01,
+            "reaction_time_ms": 813,
+            "accuracy_enemy_spotted": 22.31,
+            "accuracy_head": 14.81,
+            "spray_accuracy": 20
+        },
+        {
+            "id": "6db1d8c6-b566-47a4-ab36-f86a26789442",
+            "finished_at": "2024-07-06T13:14:17.000Z",
+            "data_source": "matchmaking",
+            "outcome": "loss",
+            "rank": 0,
+            "rank_type": 12,
+            "map_name": "de_thera",
+            "leetify_rating": -0.0724,
+            "score": [
+                9,
+                13
+            ],
+            "preaim": 21.41,
+            "reaction_time_ms": 820,
+            "accuracy_enemy_spotted": 26.15,
+            "accuracy_head": 11.11,
+            "spray_accuracy": 0
+        },
+        {
+            "id": "6a1fc08c-2d2b-4dd7-ae87-8e6cb5808a39",
+            "finished_at": "2024-07-05T15:57:31.000Z",
+            "data_source": "matchmaking",
+            "outcome": "loss",
+            "rank": 6,
+            "rank_type": 12,
+            "map_name": "de_mirage",
+            "leetify_rating": -0.0199,
+            "score": [
+                5,
+                13
+            ],
+            "preaim": 22.31,
+            "reaction_time_ms": 1000,
+            "accuracy_enemy_spotted": 13.68,
+            "accuracy_head": 33.33,
+            "spray_accuracy": 9.09
+        },
+        {
+            "id": "2695f00c-10df-4323-85cc-e6fcc00a75a4",
+            "finished_at": "2024-07-05T15:13:42.000Z",
+            "data_source": "matchmaking",
+            "outcome": "win",
+            "rank": 6,
+            "rank_type": 12,
+            "map_name": "de_mirage",
+            "leetify_rating": -0.0521,
+            "score": [
+                13,
+                11
+            ],
+            "preaim": 19.85,
+            "reaction_time_ms": 898,
+            "accuracy_enemy_spotted": 24.29,
+            "accuracy_head": 15.79,
+            "spray_accuracy": 25.81
+        },
+        {
+            "id": "ee87a0f8-413b-4377-8782-dbb3180fa146",
+            "finished_at": "2024-06-21T18:34:07.000Z",
+            "data_source": "matchmaking",
+            "outcome": "win",
+            "rank": 1,
+            "rank_type": 12,
+            "map_name": "de_dust2",
+            "leetify_rating": -0.024,
+            "score": [
+                13,
+                8
+            ],
+            "preaim": 18.47,
+            "reaction_time_ms": 891,
+            "accuracy_enemy_spotted": 26.02,
+            "accuracy_head": 9.26,
+            "spray_accuracy": 28.57
+        },
+        {
+            "id": "b9eae30d-3595-4338-aea9-dc45408f1777",
+            "finished_at": "2024-06-15T11:17:10.000Z",
+            "data_source": "matchmaking",
+            "outcome": "loss",
+            "rank": 0,
+            "rank_type": 12,
+            "map_name": "de_mirage",
+            "leetify_rating": -0.1076,
+            "score": [
+                5,
+                13
+            ],
+            "preaim": 14.03,
+            "reaction_time_ms": 820,
+            "accuracy_enemy_spotted": 21.43,
+            "accuracy_head": 25,
+            "spray_accuracy": 42.86
+        },
+        {
+            "id": "c7ef6b32-d29d-42da-90e8-a534b9fd934b",
+            "finished_at": "2024-06-15T10:02:25.000Z",
+            "data_source": "matchmaking",
+            "outcome": "loss",
+            "rank": 1,
+            "rank_type": 12,
+            "map_name": "de_dust2",
+            "leetify_rating": -0.1278,
+            "score": [
+                10,
+                13
+            ],
+            "preaim": 16.27,
+            "reaction_time_ms": 953,
+            "accuracy_enemy_spotted": 17.65,
+            "accuracy_head": 18.18,
+            "spray_accuracy": 50
+        },
+        {
+            "id": "5aefc28e-8630-49d0-9466-a88050f6df71",
+            "finished_at": "2024-06-08T19:04:08.000Z",
+            "data_source": "matchmaking",
+            "outcome": "loss",
+            "rank": 1,
+            "rank_type": 12,
+            "map_name": "de_dust2",
+            "leetify_rating": -0.0519,
+            "score": [
+                4,
+                13
+            ],
+            "preaim": 18.23,
+            "reaction_time_ms": 797,
+            "accuracy_enemy_spotted": 21.97,
+            "accuracy_head": 14.29,
+            "spray_accuracy": 0
+        },
+        {
+            "id": "1d8886d5-4bd7-4982-b4ca-c0005e71b859",
+            "finished_at": "2024-06-07T15:21:03.000Z",
+            "data_source": "matchmaking",
+            "outcome": "win",
+            "rank": 1,
+            "rank_type": 12,
+            "map_name": "de_dust2",
+            "leetify_rating": -0.0436,
+            "score": [
+                13,
+                9
+            ],
+            "preaim": 17.86,
+            "reaction_time_ms": 719,
+            "accuracy_enemy_spotted": 12.84,
+            "accuracy_head": 25,
+            "spray_accuracy": 0
+        },
+        {
+            "id": "195b9995-4626-4c3a-810b-efbaf507e277",
+            "finished_at": "2024-05-26T16:01:11.000Z",
+            "data_source": "matchmaking",
+            "outcome": "loss",
+            "rank": 1,
+            "rank_type": 12,
+            "map_name": "de_dust2",
+            "leetify_rating": -0.1024,
+            "score": [
+                9,
+                13
+            ],
+            "preaim": 27.08,
+            "reaction_time_ms": 797,
+            "accuracy_enemy_spotted": 17.21,
+            "accuracy_head": 9.09,
+            "spray_accuracy": 0
+        },
+        {
+            "id": "13e92c24-2a41-431d-999a-e98a6aef33ed",
+            "finished_at": "2024-05-26T13:56:51.000Z",
+            "data_source": "matchmaking",
+            "outcome": "loss",
+            "rank": 1,
+            "rank_type": 12,
+            "map_name": "de_dust2",
+            "leetify_rating": -0.093,
+            "score": [
+                2,
+                13
+            ],
+            "preaim": 14.78,
+            "reaction_time_ms": 844,
+            "accuracy_enemy_spotted": 7.38,
+            "accuracy_head": 15.38,
+            "spray_accuracy": 9.52
+        },
+        {
+            "id": "19b857db-14b8-4b8f-904f-20fbdc1f2897",
+            "finished_at": "2024-05-23T18:19:13.000Z",
+            "data_source": "matchmaking",
+            "outcome": "loss",
+            "rank": 0,
+            "rank_type": 12,
+            "map_name": "de_mirage",
+            "leetify_rating": -0.095,
+            "score": [
+                10,
+                13
+            ],
+            "preaim": 29.13,
+            "reaction_time_ms": 859,
+            "accuracy_enemy_spotted": 23.78,
+            "accuracy_head": 13.64,
+            "spray_accuracy": 6.67
+        },
+        {
+            "id": "ee5083f3-a44f-427e-a91c-dee55e030e5b",
+            "finished_at": "2024-05-23T17:45:01.000Z",
+            "data_source": "matchmaking",
+            "outcome": "win",
+            "rank": 0,
+            "rank_type": 12,
+            "map_name": "de_mirage",
+            "leetify_rating": 0.0005,
+            "score": [
+                13,
+                6
+            ],
+            "preaim": 29.68,
+            "reaction_time_ms": 1000,
+            "accuracy_enemy_spotted": 28.07,
+            "accuracy_head": 10.53,
+            "spray_accuracy": 28.57
+        },
+        {
+            "id": "68ac0486-dbf5-49e2-bfb2-7a0244c939c9",
+            "finished_at": "2024-05-23T17:10:04.000Z",
+            "data_source": "matchmaking",
+            "outcome": "win",
+            "rank": 1,
+            "rank_type": 12,
+            "map_name": "de_dust2",
+            "leetify_rating": -0.0968,
+            "score": [
+                13,
+                6
+            ],
+            "preaim": 23.95,
+            "reaction_time_ms": 711,
+            "accuracy_enemy_spotted": 11.3,
+            "accuracy_head": 21.43,
+            "spray_accuracy": 0
+        },
+        {
+            "id": "77b34c51-e4a3-461b-8517-13aa351fe335",
+            "finished_at": "2024-05-23T16:14:03.000Z",
+            "data_source": "matchmaking",
+            "outcome": "loss",
+            "rank": 0,
+            "rank_type": 12,
+            "map_name": "de_inferno",
+            "leetify_rating": -0.0923,
+            "score": [
+                7,
+                13
+            ],
+            "preaim": 13.54,
+            "reaction_time_ms": 820,
+            "accuracy_enemy_spotted": 24.41,
+            "accuracy_head": 12.9,
+            "spray_accuracy": 19.05
+        },
+        {
+            "id": "7b28fb3c-63c2-44dc-a659-ca99ae371891",
+            "finished_at": "2024-05-18T19:32:58.000Z",
+            "data_source": "matchmaking",
+            "outcome": "loss",
+            "rank": 1,
+            "rank_type": 12,
+            "map_name": "de_dust2",
+            "leetify_rating": -0.0708,
+            "score": [
+                11,
+                13
+            ],
+            "preaim": 15.9,
+            "reaction_time_ms": 1000,
+            "accuracy_enemy_spotted": 19.58,
+            "accuracy_head": 17.86,
+            "spray_accuracy": 14.29
+        },
+        {
+            "id": "d2015fe0-2924-4b32-91a8-910b1da7cfed",
+            "finished_at": "2024-05-18T18:31:57.000Z",
+            "data_source": "matchmaking",
+            "outcome": "loss",
+            "rank": 0,
+            "rank_type": 12,
+            "map_name": "de_mirage",
+            "leetify_rating": -0.0874,
+            "score": [
+                6,
+                13
+            ],
+            "preaim": 22.48,
+            "reaction_time_ms": 797,
+            "accuracy_enemy_spotted": 20,
+            "accuracy_head": 21.05,
+            "spray_accuracy": 66.67
+        },
+        {
+            "id": "9eccbfa8-8409-4194-ac22-365f1dcfc81a",
+            "finished_at": "2024-05-18T13:34:52.000Z",
+            "data_source": "matchmaking",
+            "outcome": "loss",
+            "rank": 1,
+            "rank_type": 12,
+            "map_name": "de_dust2",
+            "leetify_rating": -0.1091,
+            "score": [
+                10,
+                13
+            ],
+            "preaim": 17.46,
+            "reaction_time_ms": 1000,
+            "accuracy_enemy_spotted": 8.81,
+            "accuracy_head": 11.76,
+            "spray_accuracy": 2.7
+        },
+        {
+            "id": "b20a3e8d-22da-47fd-b74e-bb3c46051927",
+            "finished_at": "2024-05-11T09:54:24.000Z",
+            "data_source": "matchmaking",
+            "outcome": "loss",
+            "rank": 1,
+            "rank_type": 12,
+            "map_name": "de_dust2",
+            "leetify_rating": -0.1537,
+            "score": [
+                8,
+                13
+            ],
+            "preaim": 13.28,
+            "reaction_time_ms": 953,
+            "accuracy_enemy_spotted": 13.04,
+            "accuracy_head": 16.67,
+            "spray_accuracy": 9.09
+        },
+        {
+            "id": "5a20b5a7-4119-4a64-891e-6cb15b506a52",
+            "finished_at": "2024-05-10T18:24:19.000Z",
+            "data_source": "matchmaking",
+            "outcome": "loss",
+            "rank": 0,
+            "rank_type": 12,
+            "map_name": "de_mirage",
+            "leetify_rating": -0.12,
+            "score": [
+                10,
+                13
+            ],
+            "preaim": 17.85,
+            "reaction_time_ms": 961,
+            "accuracy_enemy_spotted": 17.05,
+            "accuracy_head": 14.81,
+            "spray_accuracy": 14.29
+        },
+        {
+            "id": "4042a57e-f97c-4274-ac02-2a8ecb2e88ba",
+            "finished_at": "2024-05-10T17:49:28.000Z",
+            "data_source": "matchmaking",
+            "outcome": "win",
+            "rank": 1,
+            "rank_type": 12,
+            "map_name": "de_dust2",
+            "leetify_rating": -0.0634,
+            "score": [
+                13,
+                8
+            ],
+            "preaim": 16.67,
+            "reaction_time_ms": 984,
+            "accuracy_enemy_spotted": 25.33,
+            "accuracy_head": 10,
+            "spray_accuracy": 0
+        },
+        {
+            "id": "6d3d3cb3-c8c1-4588-8880-80f009eb86f9",
+            "finished_at": "2024-05-10T17:03:20.000Z",
+            "data_source": "matchmaking",
+            "outcome": "loss",
+            "rank": 1,
+            "rank_type": 12,
+            "map_name": "de_dust2",
+            "leetify_rating": -0.1133,
+            "score": [
+                6,
+                13
+            ],
+            "preaim": 15.19,
+            "reaction_time_ms": 758,
+            "accuracy_enemy_spotted": 16.46,
+            "accuracy_head": 5.71,
+            "spray_accuracy": 22.22
+        },
+        {
+            "id": "23997cc1-33fd-46f1-8bb9-6c5030adaecc",
+            "finished_at": "2024-05-10T10:28:58.000Z",
+            "data_source": "matchmaking",
+            "outcome": "loss",
+            "rank": 1,
+            "rank_type": 12,
+            "map_name": "de_dust2",
+            "leetify_rating": 0.026,
+            "score": [
+                5,
+                13
+            ],
+            "preaim": 17.94,
+            "reaction_time_ms": 734,
+            "accuracy_enemy_spotted": 22.82,
+            "accuracy_head": 19.57,
+            "spray_accuracy": 50
+        },
+        {
+            "id": "d1352317-b549-4ea3-aaaa-5bb880ea51fa",
+            "finished_at": "2024-05-10T06:41:36.000Z",
+            "data_source": "matchmaking",
+            "outcome": "loss",
+            "rank": 1,
+            "rank_type": 12,
+            "map_name": "de_dust2",
+            "leetify_rating": -0.0663,
+            "score": [
+                10,
+                13
+            ],
+            "preaim": 11.2,
+            "reaction_time_ms": 781,
+            "accuracy_enemy_spotted": 20.35,
+            "accuracy_head": 8.33,
+            "spray_accuracy": 12.5
+        },
+        {
+            "id": "b2d84b64-a460-419c-b1fa-c9c9c9dbbcb9",
+            "finished_at": "2024-05-09T16:25:32.000Z",
+            "data_source": "matchmaking",
+            "outcome": "win",
+            "rank": 0,
+            "rank_type": 12,
+            "map_name": "de_mirage",
+            "leetify_rating": -0.0585,
+            "score": [
+                13,
+                5
+            ],
+            "preaim": 19.28,
+            "reaction_time_ms": 1000,
+            "accuracy_enemy_spotted": 29.03,
+            "accuracy_head": 0,
+            "spray_accuracy": 75
+        },
+        {
+            "id": "ca240250-9e31-40fe-b580-fdb2394a3f5a",
+            "finished_at": "2024-05-04T19:32:30.000Z",
+            "data_source": "matchmaking",
+            "outcome": "win",
+            "rank": 0,
+            "rank_type": 12,
+            "map_name": "de_mirage",
+            "leetify_rating": -0.1164,
+            "score": [
+                13,
+                10
+            ],
+            "preaim": 17.8,
+            "reaction_time_ms": 844,
+            "accuracy_enemy_spotted": 16.2,
+            "accuracy_head": 15.38,
+            "spray_accuracy": 42.86
+        },
+        {
+            "id": "03b00bd5-a96c-4dd2-b45b-2ea536bffbfb",
+            "finished_at": "2024-05-04T18:28:00.000Z",
+            "data_source": "matchmaking",
+            "outcome": "loss",
+            "rank": 1,
+            "rank_type": 12,
+            "map_name": "de_dust2",
+            "leetify_rating": -0.1036,
+            "score": [
+                10,
+                13
+            ],
+            "preaim": 28.22,
+            "reaction_time_ms": 781,
+            "accuracy_enemy_spotted": 15.54,
+            "accuracy_head": 16.67,
+            "spray_accuracy": 100
+        },
+        {
+            "id": "f47d0226-598b-46b5-967c-d580e25c7f3c",
+            "finished_at": "2024-05-04T17:44:59.000Z",
+            "data_source": "matchmaking",
+            "outcome": "tie",
+            "rank": 1,
+            "rank_type": 12,
+            "map_name": "de_dust2",
+            "leetify_rating": -0.1057,
+            "score": [
+                12,
+                12
+            ],
+            "preaim": 15.37,
+            "reaction_time_ms": 859,
+            "accuracy_enemy_spotted": 17.29,
+            "accuracy_head": 25,
+            "spray_accuracy": 0
+        },
+        {
+            "id": "75e96924-7ac8-4aa5-9518-df0a44b3825a",
+            "finished_at": "2024-05-04T17:34:39.000Z",
+            "data_source": "matchmaking",
+            "outcome": "win",
+            "rank": 0,
+            "rank_type": 12,
+            "map_name": "de_mirage",
+            "leetify_rating": 0.0246,
+            "score": [
+                5,
+                1
+            ],
+            "preaim": 7.62,
+            "reaction_time_ms": 609,
+            "accuracy_enemy_spotted": 32.43,
+            "accuracy_head": 8.33,
+            "spray_accuracy": 13.33
+        },
+        {
+            "id": "395dab28-bc0b-45b0-82fd-71850b8ef59f",
+            "finished_at": "2024-05-03T20:41:00.000Z",
+            "data_source": "matchmaking",
+            "outcome": "win",
+            "rank": 1,
+            "rank_type": 12,
+            "map_name": "de_dust2",
+            "leetify_rating": -0.1028,
+            "score": [
+                13,
+                10
+            ],
+            "preaim": 15.6,
+            "reaction_time_ms": 656,
+            "accuracy_enemy_spotted": 16.16,
+            "accuracy_head": 15,
+            "spray_accuracy": 0
+        },
+        {
+            "id": "b17a27b0-c387-46d7-b790-91b83ad5016d",
+            "finished_at": "2024-05-03T20:13:16.000Z",
+            "data_source": "matchmaking",
+            "outcome": "loss",
+            "rank": 0,
+            "rank_type": 12,
+            "map_name": "de_mirage",
+            "leetify_rating": -0.1277,
+            "score": [
+                0,
+                13
+            ],
+            "preaim": 14.55,
+            "reaction_time_ms": 578,
+            "accuracy_enemy_spotted": 6.52,
+            "accuracy_head": 0,
+            "spray_accuracy": 0
+        },
+        {
+            "id": "1fc39015-8fc2-4bfe-98c3-f62349b8a895",
+            "finished_at": "2024-05-03T19:33:22.000Z",
+            "data_source": "matchmaking",
+            "outcome": "loss",
+            "rank": 1,
+            "rank_type": 12,
+            "map_name": "de_dust2",
+            "leetify_rating": -0.1477,
+            "score": [
+                6,
+                13
+            ],
+            "preaim": 15.15,
+            "reaction_time_ms": 984,
+            "accuracy_enemy_spotted": 12.5,
+            "accuracy_head": 21.05,
+            "spray_accuracy": 5.26
+        },
+        {
+            "id": "a9332040-e5e1-4ea2-9fa2-017d8cb1b034",
+            "finished_at": "2024-05-03T18:53:45.000Z",
+            "data_source": "matchmaking",
+            "outcome": "loss",
+            "rank": 1,
+            "rank_type": 12,
+            "map_name": "de_dust2",
+            "leetify_rating": -0.0977,
+            "score": [
+                7,
+                13
+            ],
+            "preaim": 13.34,
+            "reaction_time_ms": 750,
+            "accuracy_enemy_spotted": 12.26,
+            "accuracy_head": 16.67,
+            "spray_accuracy": 0
+        },
+        {
+            "id": "012e49de-f6da-44ea-b02d-93f9a72f6f97",
+            "finished_at": "2024-05-03T18:10:21.000Z",
+            "data_source": "matchmaking",
+            "outcome": "loss",
+            "rank": 1,
+            "rank_type": 12,
+            "map_name": "de_dust2",
+            "leetify_rating": -0.0675,
+            "score": [
+                9,
+                13
+            ],
+            "preaim": 18.13,
+            "reaction_time_ms": 766,
+            "accuracy_enemy_spotted": 23.88,
+            "accuracy_head": 9.26,
+            "spray_accuracy": 15.38
+        },
+        {
+            "id": "c94b4a78-b731-4ebe-8c74-ab7f6639f1c8",
+            "finished_at": "2024-05-02T17:20:14.000Z",
+            "data_source": "matchmaking_wingman",
+            "outcome": "loss",
+            "rank": 0,
+            "rank_type": 7,
+            "map_name": "de_nuke",
+            "leetify_rating": -0.0087,
+            "score": [
+                7,
+                9
+            ],
+            "preaim": 15.36,
+            "reaction_time_ms": 641,
+            "accuracy_enemy_spotted": 37.84,
+            "accuracy_head": 21.43,
+            "spray_accuracy": 0
+        },
+        {
+            "id": "c4ae8f99-7a11-49f2-a6a4-4189810bd50c",
+            "finished_at": "2024-05-02T16:58:29.000Z",
+            "data_source": "matchmaking_wingman",
+            "outcome": "win",
+            "rank": 0,
+            "rank_type": 7,
+            "map_name": "de_vertigo",
+            "leetify_rating": -0.1926,
+            "score": [
+                9,
+                7
+            ],
+            "preaim": 11.6,
+            "reaction_time_ms": 906,
+            "accuracy_enemy_spotted": 22.22,
+            "accuracy_head": 16.67,
+            "spray_accuracy": 0
+        },
+        {
+            "id": "8e7f5e76-6651-4a0a-9613-01afc2c64865",
+            "finished_at": "2024-04-28T10:02:14.000Z",
+            "data_source": "matchmaking",
+            "outcome": "win",
+            "rank": 1,
+            "rank_type": 12,
+            "map_name": "de_dust2",
+            "leetify_rating": -0.0695,
+            "score": [
+                13,
+                8
+            ],
+            "preaim": 13.14,
+            "reaction_time_ms": 1000,
+            "accuracy_enemy_spotted": 18.23,
+            "accuracy_head": 11.43,
+            "spray_accuracy": 8.7
+        },
+        {
+            "id": "cf2f43d9-501c-4463-9bdc-95c7a4284750",
+            "finished_at": "2024-04-28T09:30:59.000Z",
+            "data_source": "matchmaking",
+            "outcome": "loss",
+            "rank": 1,
+            "rank_type": 12,
+            "map_name": "de_dust2",
+            "leetify_rating": -0.0999,
+            "score": [
+                6,
+                13
+            ],
+            "preaim": 19.59,
+            "reaction_time_ms": 1000,
+            "accuracy_enemy_spotted": 13.97,
+            "accuracy_head": 5,
+            "spray_accuracy": 10
+        },
+        {
+            "id": "e3a7134a-7edd-40ad-b35e-38708c20e878",
+            "finished_at": "2024-04-28T08:23:07.000Z",
+            "data_source": "matchmaking",
+            "outcome": "loss",
+            "rank": 2,
+            "rank_type": 12,
+            "map_name": "de_dust2",
+            "leetify_rating": -0.1143,
+            "score": [
+                8,
+                13
+            ],
+            "preaim": 22.75,
+            "reaction_time_ms": 703,
+            "accuracy_enemy_spotted": 16,
+            "accuracy_head": 23.53,
+            "spray_accuracy": 0
+        },
+        {
+            "id": "3b283188-4359-4e7c-a0a7-ff7d4f570583",
+            "finished_at": "2024-04-26T21:21:22.000Z",
+            "data_source": "matchmaking",
+            "outcome": "win",
+            "rank": 0,
+            "rank_type": 12,
+            "map_name": "de_mirage",
+            "leetify_rating": -0.024,
+            "score": [
+                13,
+                5
+            ],
+            "preaim": 14.72,
+            "reaction_time_ms": 625,
+            "accuracy_enemy_spotted": 40.82,
+            "accuracy_head": 13.33,
+            "spray_accuracy": 0
+        },
+        {
+            "id": "eae6d534-6ef5-4b89-849c-4e53b9b0474b",
+            "finished_at": "2024-04-26T20:46:57.000Z",
+            "data_source": "matchmaking",
+            "outcome": "loss",
+            "rank": 2,
+            "rank_type": 12,
+            "map_name": "de_dust2",
+            "leetify_rating": -0.0467,
+            "score": [
+                7,
+                13
+            ],
+            "preaim": 18.85,
+            "reaction_time_ms": 844,
+            "accuracy_enemy_spotted": 14.37,
+            "accuracy_head": 17.86,
+            "spray_accuracy": 0
+        },
+        {
+            "id": "5d2e5379-6ca6-4f92-b758-7b5fc198f015",
+            "finished_at": "2024-04-26T20:12:52.000Z",
+            "data_source": "matchmaking",
+            "outcome": "win",
+            "rank": 2,
+            "rank_type": 12,
+            "map_name": "de_dust2",
+            "leetify_rating": -0.0805,
+            "score": [
+                13,
+                6
+            ],
+            "preaim": 16.77,
+            "reaction_time_ms": 797,
+            "accuracy_enemy_spotted": 17.26,
+            "accuracy_head": 11.43,
+            "spray_accuracy": 7.69
+        },
+        {
+            "id": "c2b8dc34-4180-4875-9905-e7a79175315b",
+            "finished_at": "2024-04-26T19:34:36.000Z",
+            "data_source": "matchmaking",
+            "outcome": "loss",
+            "rank": 2,
+            "rank_type": 12,
+            "map_name": "de_dust2",
+            "leetify_rating": -0.0213,
+            "score": [
+                10,
+                13
+            ],
+            "preaim": 18.81,
+            "reaction_time_ms": 922,
+            "accuracy_enemy_spotted": 17.65,
+            "accuracy_head": 13.51,
+            "spray_accuracy": 25
+        },
+        {
+            "id": "53ca2fe3-47bb-4826-9df8-fa4bcbbaf40f",
+            "finished_at": "2024-04-26T08:28:29.000Z",
+            "data_source": "matchmaking",
+            "outcome": "tie",
+            "rank": 2,
+            "rank_type": 12,
+            "map_name": "de_dust2",
+            "leetify_rating": -0.0838,
+            "score": [
+                12,
+                12
+            ],
+            "preaim": 12.6,
+            "reaction_time_ms": 953,
+            "accuracy_enemy_spotted": 17.62,
+            "accuracy_head": 13.33,
+            "spray_accuracy": 9.09
+        },
+        {
+            "id": "415bcbe5-4621-4b30-a2ed-bd99ec352287",
+            "finished_at": "2024-03-01T16:16:49.000Z",
+            "data_source": "matchmaking",
+            "outcome": "loss",
+            "rank": 0,
+            "rank_type": 12,
+            "map_name": "de_mirage",
+            "leetify_rating": -0.0808,
+            "score": [
+                11,
+                13
+            ],
+            "preaim": 16.34,
+            "reaction_time_ms": 953,
+            "accuracy_enemy_spotted": 21.23,
+            "accuracy_head": 3.03,
+            "spray_accuracy": 36
+        },
+        {
+            "id": "cb234e7f-5cc9-4a86-b081-0190bb959728",
+            "finished_at": "2024-02-09T19:39:52.000Z",
+            "data_source": "matchmaking",
+            "outcome": "loss",
+            "rank": 2,
+            "rank_type": 12,
+            "map_name": "de_dust2",
+            "leetify_rating": -0.1083,
+            "score": [
+                5,
+                13
+            ],
+            "preaim": 15.15,
+            "reaction_time_ms": 859,
+            "accuracy_enemy_spotted": 21.17,
+            "accuracy_head": 20.59,
+            "spray_accuracy": 0
+        },
+        {
+            "id": "bb33a8ef-eddf-4b42-b53f-5451b3a409c6",
+            "finished_at": "2024-02-09T19:02:47.000Z",
+            "data_source": "matchmaking",
+            "outcome": "loss",
+            "rank": 2,
+            "rank_type": 12,
+            "map_name": "de_dust2",
+            "leetify_rating": -0.0707,
+            "score": [
+                6,
+                13
+            ],
+            "preaim": 13.28,
+            "reaction_time_ms": 1000,
+            "accuracy_enemy_spotted": 17.99,
+            "accuracy_head": 11.43,
+            "spray_accuracy": 0
+        },
+        {
+            "id": "4dc3889f-5337-4e64-abf3-4a806ed95be9",
+            "finished_at": "2024-02-09T18:15:11.000Z",
+            "data_source": "matchmaking",
+            "outcome": "tie",
+            "rank": 2,
+            "rank_type": 12,
+            "map_name": "de_dust2",
+            "leetify_rating": -0.0174,
+            "score": [
+                12,
+                12
+            ],
+            "preaim": 17.44,
+            "reaction_time_ms": 891,
+            "accuracy_enemy_spotted": 16.1,
+            "accuracy_head": 11.54,
+            "spray_accuracy": 0
+        },
+        {
+            "id": "571f157f-1028-4f44-859f-c44d10cec4e5",
+            "finished_at": "2024-02-04T17:20:02.000Z",
+            "data_source": "matchmaking",
+            "outcome": "win",
+            "rank": 2,
+            "rank_type": 12,
+            "map_name": "de_dust2",
+            "leetify_rating": -0.0722,
+            "score": [
+                13,
+                11
+            ],
+            "preaim": 21.05,
+            "reaction_time_ms": 766,
+            "accuracy_enemy_spotted": 19.72,
+            "accuracy_head": 10.71,
+            "spray_accuracy": 16.67
+        },
+        {
+            "id": "8c9ea49a-4d04-4d92-b995-3f0c96dffc88",
+            "finished_at": "2024-02-04T09:40:38.000Z",
+            "data_source": "matchmaking",
+            "outcome": "win",
+            "rank": 2,
+            "rank_type": 12,
+            "map_name": "de_dust2",
+            "leetify_rating": -0.0043,
+            "score": [
+                13,
+                5
+            ],
+            "preaim": 28.23,
+            "reaction_time_ms": 672,
+            "accuracy_enemy_spotted": 31.93,
+            "accuracy_head": 4.44,
+            "spray_accuracy": 100
+        },
+        {
+            "id": "ce23ee11-f10a-4bdc-aafa-226f4d2ba17d",
+            "finished_at": "2024-02-03T17:32:01.000Z",
+            "data_source": "matchmaking",
+            "outcome": "loss",
+            "rank": 2,
+            "rank_type": 12,
+            "map_name": "de_dust2",
+            "leetify_rating": -0.0652,
+            "score": [
+                5,
+                13
+            ],
+            "preaim": 18.77,
+            "reaction_time_ms": 828,
+            "accuracy_enemy_spotted": 16.39,
+            "accuracy_head": 25,
+            "spray_accuracy": 0
+        },
+        {
+            "id": "a39edbc5-dd7f-48e7-868a-5d4f50180678",
+            "finished_at": "2024-01-25T18:21:43.000Z",
+            "data_source": "matchmaking",
+            "outcome": "loss",
+            "rank": 2,
+            "rank_type": 12,
+            "map_name": "de_dust2",
+            "leetify_rating": -0.1087,
+            "score": [
+                8,
+                13
+            ],
+            "preaim": 23.61,
+            "reaction_time_ms": 1000,
+            "accuracy_enemy_spotted": 14.37,
+            "accuracy_head": 2.94,
+            "spray_accuracy": 0
+        },
+        {
+            "id": "19438609-4648-456a-8c18-e3a32e252873",
+            "finished_at": "2024-01-21T18:34:53.000Z",
+            "data_source": "matchmaking",
+            "outcome": "loss",
+            "rank": 2,
+            "rank_type": 12,
+            "map_name": "de_dust2",
+            "leetify_rating": -0.1004,
+            "score": [
+                6,
+                13
+            ],
+            "preaim": 13.79,
+            "reaction_time_ms": 1000,
+            "accuracy_enemy_spotted": 18.6,
+            "accuracy_head": 25,
+            "spray_accuracy": 0
+        },
+        {
+            "id": "a2cfa439-2c59-47c7-8549-1f7ea4c9976b",
+            "finished_at": "2024-01-21T15:59:13.000Z",
+            "data_source": "matchmaking",
+            "outcome": "tie",
+            "rank": 2,
+            "rank_type": 12,
+            "map_name": "de_dust2",
+            "leetify_rating": -0.0376,
+            "score": [
+                12,
+                12
+            ],
+            "preaim": 19.66,
+            "reaction_time_ms": 703,
+            "accuracy_enemy_spotted": 21.66,
+            "accuracy_head": 8.33,
+            "spray_accuracy": 0
+        },
+        {
+            "id": "be889d0e-5a02-46a0-94e7-765076fc356d",
+            "finished_at": "2024-01-21T14:49:18.000Z",
+            "data_source": "matchmaking",
+            "outcome": "loss",
+            "rank": 0,
+            "rank_type": 12,
+            "map_name": "cs_office",
+            "leetify_rating": -0.1109,
+            "score": [
+                5,
+                13
+            ],
+            "preaim": 28.37,
+            "reaction_time_ms": 656,
+            "accuracy_enemy_spotted": 25,
+            "accuracy_head": 2.22,
+            "spray_accuracy": 0
+        },
+        {
+            "id": "87a4dec7-f0f5-4c31-94a8-37ab9f021ce0",
+            "finished_at": "2024-01-21T14:00:57.000Z",
+            "data_source": "matchmaking",
+            "outcome": "loss",
+            "rank": 0,
+            "rank_type": 12,
+            "map_name": "de_dust2",
+            "leetify_rating": -0.0045,
+            "score": [
+                6,
+                13
+            ],
+            "preaim": 18.96,
+            "reaction_time_ms": 734,
+            "accuracy_enemy_spotted": 24.18,
+            "accuracy_head": 15.56,
+            "spray_accuracy": 66.67
+        },
+        {
+            "id": "2b8e0a66-9085-4c6b-a73e-57e6cb0d0b6b",
+            "finished_at": "2024-01-21T10:23:49.000Z",
+            "data_source": "matchmaking",
+            "outcome": "loss",
+            "rank": 0,
+            "rank_type": 12,
+            "map_name": "cs_office",
+            "leetify_rating": -0.1072,
+            "score": [
+                9,
+                13
+            ],
+            "preaim": 22.76,
+            "reaction_time_ms": 875,
+            "accuracy_enemy_spotted": 26.4,
+            "accuracy_head": 9.09,
+            "spray_accuracy": 33.33
+        },
+        {
+            "id": "5d4fc75a-3b93-4c94-a451-9887e1da1be8",
+            "finished_at": "2024-01-21T09:39:39.000Z",
+            "data_source": "matchmaking",
+            "outcome": "win",
+            "rank": 0,
+            "rank_type": 12,
+            "map_name": "de_inferno",
+            "leetify_rating": -0.0786,
+            "score": [
+                13,
+                9
+            ],
+            "preaim": 22.96,
+            "reaction_time_ms": 891,
+            "accuracy_enemy_spotted": 15.67,
+            "accuracy_head": 27.27,
+            "spray_accuracy": 22.22
+        },
+        {
+            "id": "fd817392-bd4b-4d32-bae2-a4996bff5061",
+            "finished_at": "2024-01-20T16:32:10.000Z",
+            "data_source": "matchmaking",
+            "outcome": "win",
+            "rank": 0,
+            "rank_type": 12,
+            "map_name": "de_dust2",
+            "leetify_rating": -0.0636,
+            "score": [
+                13,
+                8
+            ],
+            "preaim": 19.73,
+            "reaction_time_ms": 719,
+            "accuracy_enemy_spotted": 17.41,
+            "accuracy_head": 16.67,
+            "spray_accuracy": 13.33
+        },
+        {
+            "id": "d6edd252-ee17-4b50-820e-2163a5279748",
+            "finished_at": "2024-01-20T13:41:10.000Z",
+            "data_source": "matchmaking",
+            "outcome": "win",
+            "rank": 0,
+            "rank_type": 12,
+            "map_name": "de_dust2",
+            "leetify_rating": -0.0299,
+            "score": [
+                13,
+                5
+            ],
+            "preaim": 12.87,
+            "reaction_time_ms": 875,
+            "accuracy_enemy_spotted": 16.76,
+            "accuracy_head": 10,
+            "spray_accuracy": 50
+        },
+        {
+            "id": "643f926a-be41-4d16-b668-50a76bd6534d",
+            "finished_at": "2024-01-19T18:50:08.000Z",
+            "data_source": "matchmaking",
+            "outcome": "loss",
+            "rank": 0,
+            "rank_type": 12,
+            "map_name": "de_mirage",
+            "leetify_rating": -0.1041,
+            "score": [
+                0,
+                13
+            ],
+            "preaim": 22.22,
+            "reaction_time_ms": 1000,
+            "accuracy_enemy_spotted": 8.33,
+            "accuracy_head": 15.38,
+            "spray_accuracy": 0
+        },
+        {
+            "id": "5f3c2e4a-17c2-40ad-b14e-2fd143d22013",
+            "finished_at": "2024-01-14T09:52:00.000Z",
+            "data_source": "matchmaking_wingman",
+            "outcome": "loss",
+            "rank": 0,
+            "rank_type": 7,
+            "map_name": "de_nuke",
+            "leetify_rating": -0.1654,
+            "score": [
+                2,
+                9
+            ],
+            "preaim": 32.5,
+            "reaction_time_ms": 1000,
+            "accuracy_enemy_spotted": 15.38,
+            "accuracy_head": 25,
+            "spray_accuracy": 0
+        },
+        {
+            "id": "f30051a0-242f-47dc-af01-d96a31683710",
+            "finished_at": "2024-01-13T16:30:16.000Z",
+            "data_source": "matchmaking",
+            "outcome": "loss",
+            "rank": 0,
+            "rank_type": 12,
+            "map_name": "cs_office",
+            "leetify_rating": -0.1668,
+            "score": [
+                3,
+                13
+            ],
+            "preaim": 27.65,
+            "reaction_time_ms": 1000,
+            "accuracy_enemy_spotted": 13.46,
+            "accuracy_head": 33.33,
+            "spray_accuracy": 0
+        }
+    ],
+    "recent_teammates": [
+        {
+            "steam64_id": "76561198268087619",
+            "recent_matches_count": 23
+        },
+        {
+            "steam64_id": "76561199066231958",
+            "recent_matches_count": 41
+        },
+        {
+            "steam64_id": "76561199369088250",
+            "recent_matches_count": 22
+        },
+        {
+            "steam64_id": "76561198063307475",
+            "recent_matches_count": 31
+        },
+        {
+            "steam64_id": "76561198214697784",
+            "recent_matches_count": 15
+        },
+        {
+            "steam64_id": "76561198038575851",
+            "recent_matches_count": 11
+        },
+        {
+            "steam64_id": "76561198323770332",
+            "recent_matches_count": 27
+        },
+        {
+            "steam64_id": "76561198849949177",
+            "recent_matches_count": 21
+        },
+        {
+            "steam64_id": "76561198806421300",
+            "recent_matches_count": 16
+        },
+        {
+            "steam64_id": "76561199229150540",
+            "recent_matches_count": 10
+        },
+        {
+            "steam64_id": "76561198434260208",
+            "recent_matches_count": 10
+        },
+        {
+            "steam64_id": "76561198155824312",
+            "recent_matches_count": 11
+        },
+        {
+            "steam64_id": "76561199078802515",
+            "recent_matches_count": 19
+        }
+    ]
+}
