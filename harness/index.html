@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Discord Embed Harness – CS2 Profile</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=gg+sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    /* ─────────────────────────────────────────────
+       Page shell mimicking Discord's dark theme
+    ───────────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --dc-bg-primary:    #313338;
+      --dc-bg-secondary:  #2b2d31;
+      --dc-bg-sidebar:    #2b2d31;
+      --dc-bg-embed:      #2b2d31;
+      --dc-embed-border:  #1e1f22;
+      --dc-text-normal:   #dbdee1;
+      --dc-text-muted:    #80848e;
+      --dc-text-link:     #00a8fc;
+      --dc-header-primary:#f2f3f5;
+      --dc-brand:         #5865f2;
+      --font-main:        'Inter', 'gg sans', sans-serif;
+    }
+
+    body {
+      background: var(--dc-bg-secondary);
+      font-family: var(--font-main);
+      color: var(--dc-text-normal);
+      display: flex;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    /* ── Fake sidebar ── */
+    .sidebar {
+      width: 240px;
+      min-width: 240px;
+      background: var(--dc-bg-sidebar);
+      display: flex;
+      flex-direction: column;
+      border-right: 1px solid var(--dc-embed-border);
+      padding: 12px 8px;
+      gap: 2px;
+    }
+
+    .sidebar-guild {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 10px;
+      border-radius: 4px;
+      cursor: pointer;
+      color: var(--dc-header-primary);
+      font-weight: 600;
+      font-size: .9rem;
+    }
+
+    .sidebar-guild .guild-icon {
+      width: 32px; height: 32px;
+      border-radius: 50%;
+      background: #5865f2;
+      display: grid; place-items: center;
+      font-size: 14px; font-weight: 800; color: #fff;
+      flex-shrink: 0;
+    }
+
+    .sidebar-channel {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 5px 10px;
+      border-radius: 4px;
+      cursor: pointer;
+      color: var(--dc-text-muted);
+      font-size: .87rem;
+    }
+
+    .sidebar-channel.active {
+      background: rgba(255,255,255,.06);
+      color: var(--dc-text-normal);
+    }
+
+    .sidebar-channel .hash { font-size: 1rem; }
+
+    /* ── Main chat area ── */
+    .chat-area {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    /* Channel header bar */
+    .channel-header {
+      height: 48px;
+      background: var(--dc-bg-primary);
+      border-bottom: 1px solid var(--dc-embed-border);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 0 16px;
+      flex-shrink: 0;
+      font-weight: 600;
+      color: var(--dc-header-primary);
+      font-size: .93rem;
+    }
+
+    .channel-header .hash { color: var(--dc-text-muted); font-size: 1.1rem; }
+
+    /* Messages scroll area */
+    .messages {
+      flex: 1;
+      overflow-y: auto;
+      padding: 16px 16px 8px;
+      background: var(--dc-bg-primary);
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    /* ── Discord message row ── */
+    .message-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      padding: 2px 0 2px;
+      border-radius: 4px;
+      transition: background .08s;
+    }
+
+    .message-row:hover { background: rgba(0,0,0,.07); }
+
+    .avatar {
+      width: 40px; height: 40px;
+      border-radius: 50%;
+      background: #5865f2;
+      display: grid; place-items: center;
+      font-size: 18px; font-weight: 800; color: #fff;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .message-content { flex: 1; min-width: 0; }
+
+    .message-meta {
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+      margin-bottom: 4px;
+    }
+
+    .bot-name {
+      font-weight: 600;
+      font-size: .93rem;
+      color: var(--dc-header-primary);
+    }
+
+    .bot-tag {
+      background: #5865f2;
+      color: #fff;
+      font-size: .6rem;
+      font-weight: 700;
+      padding: 1px 4px;
+      border-radius: 3px;
+      letter-spacing: .3px;
+    }
+
+    .message-timestamp {
+      font-size: .73rem;
+      color: var(--dc-text-muted);
+    }
+
+    .slash-command-ref {
+      font-size: .8rem;
+      color: var(--dc-text-muted);
+      margin-bottom: 6px;
+    }
+
+    .slash-command-ref span { color: var(--dc-text-link); cursor: pointer; }
+
+    /* ── Discord embed ── */
+    .dc-embed {
+      display: flex;
+      border-left: 4px solid #e91e63;
+      background: var(--dc-bg-embed);
+      border-radius: 4px;
+      max-width: 520px;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .dc-embed-inner {
+      padding: 12px 16px 16px;
+      flex: 1;
+      min-width: 0;
+    }
+
+    /* Author line */
+    .embed-author {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 8px;
+    }
+
+    .embed-author img {
+      width: 20px; height: 20px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .embed-author-name {
+      font-size: .87rem;
+      font-weight: 600;
+      color: var(--dc-header-primary);
+      text-decoration: none;
+    }
+
+    .embed-author-name:hover { text-decoration: underline; }
+
+    /* Description */
+    .embed-description {
+      font-size: .87rem;
+      color: var(--dc-text-normal);
+      line-height: 1.4;
+      margin-bottom: 10px;
+    }
+
+    .embed-description a { color: var(--dc-text-link); text-decoration: none; }
+    .embed-description a:hover { text-decoration: underline; }
+
+    /* Fields grid */
+    .embed-fields {
+      display: grid;
+      /* up to 3 inline fields per row */
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 8px 8px;
+      margin-bottom: 10px;
+    }
+
+    .embed-field { min-width: 0; }
+    .embed-field.full-width { grid-column: 1 / -1; }
+
+    .embed-field-name {
+      font-size: .72rem;
+      font-weight: 700;
+      color: var(--dc-header-primary);
+      margin-bottom: 2px;
+      text-transform: uppercase;
+      letter-spacing: .3px;
+      white-space: nowrap;
+    }
+
+    .embed-field-value {
+      font-size: .87rem;
+      color: var(--dc-text-normal);
+      word-break: break-word;
+      line-height: 1.3;
+    }
+
+    /* Discord markdown: __text__ = underline */
+    .dc-underline { text-decoration: underline; }
+
+    /* Footer */
+    .embed-footer {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: 6px;
+    }
+
+    .embed-footer img {
+      width: 16px; height: 16px;
+      border-radius: 50%;
+    }
+
+    .embed-footer-text {
+      font-size: .72rem;
+      color: var(--dc-text-muted);
+    }
+
+    /* ── Input bar (cosmetic) ── */
+    .input-bar {
+      height: 68px;
+      background: var(--dc-bg-primary);
+      border-top: 1px solid var(--dc-embed-border);
+      display: flex;
+      align-items: center;
+      padding: 0 16px;
+      gap: 12px;
+      flex-shrink: 0;
+    }
+
+    .input-box {
+      flex: 1;
+      height: 44px;
+      background: #383a40;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      padding: 0 16px;
+      color: var(--dc-text-muted);
+      font-size: .93rem;
+      cursor: text;
+      user-select: none;
+    }
+
+    /* ── JSON inspector panel ── */
+    .inspector-panel {
+      width: 360px;
+      min-width: 260px;
+      background: #1e1f22;
+      border-left: 1px solid #111214;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    .inspector-header {
+      background: #2b2d31;
+      border-bottom: 1px solid #111214;
+      padding: 12px 16px;
+      font-size: .78rem;
+      font-weight: 700;
+      color: var(--dc-text-muted);
+      text-transform: uppercase;
+      letter-spacing: .6px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-shrink: 0;
+    }
+
+    .inspector-header .badge {
+      background: #5865f2;
+      color: #fff;
+      font-size: .6rem;
+      padding: 2px 6px;
+      border-radius: 10px;
+    }
+
+    .inspector-body {
+      flex: 1;
+      overflow-y: auto;
+      padding: 12px 14px;
+    }
+
+    pre#json-output {
+      font-family: 'Courier New', monospace;
+      font-size: .72rem;
+      line-height: 1.55;
+      color: #a8b1c2;
+      white-space: pre-wrap;
+      word-break: break-all;
+    }
+
+    /* JSON syntax colouring */
+    .jk { color: #79c0ff; }  /* key */
+    .js { color: #a5d6ff; }  /* string value */
+    .jn { color: #d2a8ff; }  /* number */
+    .jb { color: #ff7b72; }  /* boolean / null */
+    .jp { color: #8b949e; }  /* punctuation */
+
+    /* Scrollbar */
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: #1a1b1e; border-radius: 3px; }
+  </style>
+</head>
+<body>
+
+<!-- ── Fake sidebar ──────────────────────────────────────────── -->
+<aside class="sidebar">
+  <div class="sidebar-guild">
+    <div class="guild-icon">S</div>
+    SCOPE.GG Dev
+  </div>
+  <div style="height:8px"></div>
+  <div class="sidebar-channel active"><span class="hash">#</span> cs2-profiles</div>
+  <div class="sidebar-channel"><span class="hash">#</span> general</div>
+  <div class="sidebar-channel"><span class="hash">#</span> bot-testing</div>
+</aside>
+
+<!-- ── Main chat + inspector ─────────────────────────────────── -->
+<div class="chat-area">
+
+  <!-- Channel header -->
+  <div class="channel-header">
+    <span class="hash">#</span>
+    cs2-profiles
+    <span style="color:var(--dc-text-muted);font-weight:400;font-size:.8rem;margin-left:4px">
+      — Live Leetify profiles
+    </span>
+  </div>
+
+  <!-- Message list -->
+  <div class="messages" id="messages">
+
+    <!-- System divider -->
+    <div style="display:flex;align-items:center;gap:8px;margin:8px 0 12px;opacity:.5">
+      <div style="flex:1;height:1px;background:#3f4147"></div>
+      <span style="font-size:.72rem;color:var(--dc-text-muted)">Today</span>
+      <div style="flex:1;height:1px;background:#3f4147"></div>
+    </div>
+
+    <!-- Bot message row (populated by JS) -->
+    <div class="message-row" id="bot-message">
+      <div class="avatar">S</div>
+      <div class="message-content">
+        <div class="message-meta">
+          <span class="bot-name">ScopeBot</span>
+          <span class="bot-tag">APP</span>
+          <span class="message-timestamp" id="msg-timestamp"></span>
+        </div>
+        <div class="slash-command-ref">
+          Used <span>/profile</span>
+        </div>
+        <!-- Embed injected here -->
+        <div id="embed-mount"></div>
+      </div>
+    </div>
+
+  </div><!-- /messages -->
+
+  <!-- Cosmetic input bar -->
+  <div class="input-bar">
+    <div class="input-box">Message #cs2-profiles</div>
+  </div>
+
+</div><!-- /chat-area -->
+
+<!-- ── JSON inspector panel ──────────────────────────────────── -->
+<div class="inspector-panel">
+  <div class="inspector-header">
+    Embed Object
+    <span class="badge">JSON</span>
+  </div>
+  <div class="inspector-body">
+    <pre id="json-output"></pre>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     INLINE profile-embed.js  (exact same logic, no module.exports)
+     This mirrors src/embeds/profile-embed.js so the harness
+     always reflects the real builder.
+════════════════════════════════════════════════════════════ -->
+<script>
+// ── Helpers (mirrors profile-embed.js) ──────────────────────────────────────
+function fmt(n, dec = 1) {
+  return parseFloat(n.toFixed(dec)).toString();
+}
+
+function signed(n, dec = 1) {
+  const v = parseFloat(n.toFixed(dec));
+  return (v >= 0 ? '+' : '') + v;
+}
+
+const EMBED_COLOR = 0xe91e63;
+
+function buildProfileEmbed(data, opts = {}) {
+  const { rating, stats, ranks } = data;
+  const { clanTag = '', peakRating = null } = opts;
+
+  const avgRating = (rating.ct_leetify + rating.t_leetify) / 2;
+  const ctWin = Math.round(stats.ct_opening_duel_success_percentage);
+  const tWin  = Math.round(stats.t_opening_duel_success_percentage);
+  const partyScore = fmt(stats.flashbang_hit_foe_per_flashbang, 2);
+  const heDmg = `${fmt(stats.he_foes_damage_avg, 1)} / ${fmt(stats.he_friends_damage_avg, 1)}`;
+  const banCount = Array.isArray(data.bans) ? data.bans.length : 0;
+  const banPct   = data.total_matches > 0
+    ? ((banCount / data.total_matches) * 100).toFixed(1)
+    : '0.0';
+  const kdRatio = stats.traded_deaths_success_percentage > 0
+    ? fmt(stats.trade_kills_success_percentage / stats.traded_deaths_success_percentage, 2)
+    : 'N/A';
+  const bannedMatesPct = ((banCount / Math.max(data.total_matches, 1)) * 100).toFixed(2) + '%';
+
+  const peakLabel = peakRating
+    ? `🔷 ${peakRating}`
+    : ranks.premier
+      ? `🔷 ${ranks.premier.toLocaleString()}`
+      : ranks.faceit_elo
+        ? `⚡ ${ranks.faceit_elo}`
+        : `~${Math.abs(ranks.leetify).toFixed(2)} (Leetify)`;
+
+  const clanPart  = clanTag ? ` [${clanTag}]` : '';
+  const titleText = `${data.name} | SCOPE.GG${clanPart}`;
+  const leetifyUrl = `https://leetify.com/app/profile/${data.steam64_id}`;
+
+  const SPACER = { name: '\u200B', value: '\u200B', inline: false };
+
+  const fields = [
+    { name: 'AIM',         value: fmt(rating.aim),                               inline: true },
+    { name: 'CLUTCH',      value: signed(rating.clutch),                          inline: true },
+    { name: 'RATING',      value: signed(avgRating),                              inline: true },
+    { name: 'TIME TO DMG', value: `${Math.round(stats.reaction_time_ms)}ms`,      inline: true },
+    { name: 'WINRATE',     value: `${ctWin}% / ${tWin}%`,                         inline: true },
+    SPACER,
+    { name: 'UTILITY',     value: fmt(rating.utility),                            inline: true },
+    { name: 'OPENING',     value: signed(rating.opening),                         inline: true },
+    { name: 'PARTY',       value: partyScore,                                     inline: true },
+    { name: 'AVG HE DMG',  value: heDmg,                                          inline: true },
+    { name: 'MATCHES',     value: `__${data.total_matches}__ / ${banPct}%`,        inline: true },
+    SPACER,
+    { name: 'POSITION',    value: fmt(rating.positioning),                        inline: true },
+    { name: 'KD',          value: kdRatio,                                        inline: true },
+    { name: 'PREAIM',      value: `${fmt(stats.preaim, 2)}°`,                     inline: true },
+    { name: 'PEAK RATING', value: peakLabel,                                      inline: true },
+    { name: 'BANNED MATES',value: bannedMatesPct,                                 inline: true },
+  ];
+
+  const embed = {
+    color: EMBED_COLOR,
+    author: {
+      name: titleText,
+      url: leetifyUrl,
+      icon_url: 'https://leetify.com/assets/images/meta/logo.png',
+    },
+    description: `📊 **Data provided by [Leetify](${leetifyUrl})**`,
+    fields,
+    footer: {
+      text: 'View on Leetify',
+      icon_url: 'https://leetify.com/assets/images/meta/logo.png',
+    },
+    url: leetifyUrl,
+    timestamp: new Date().toISOString(),
+  };
+
+  return { embeds: [embed] };
+}
+</script>
+
+<!-- ═══════════════════════════════════════════════════════════
+     Sample data (cvs.json)
+════════════════════════════════════════════════════════════ -->
+<script>
+const CVS_DATA = {
+  "privacy_mode": "public",
+  "winrate": 0.2593,
+  "total_matches": 465,
+  "first_match_date": "2020-03-22T11:25:56.000Z",
+  "name": "CVS",
+  "bans": [],
+  "steam64_id": "76561198044837598",
+  "id": "09f97acd-5d46-4806-becf-680b8b369265",
+  "ranks": {
+    "leetify": -5.83,
+    "premier": null,
+    "faceit": null,
+    "faceit_elo": null,
+    "wingman": null,
+    "renown": null,
+    "competitive": [
+      { "map_name": "de_dust2", "rank": 4 },
+      { "map_name": "de_thera", "rank": 0 }
+    ]
+  },
+  "rating": {
+    "aim": 1.3903,
+    "positioning": 20.3269,
+    "utility": 33.5656,
+    "clutch": 0.0755,
+    "opening": -0.0839,
+    "ct_leetify": -0.0603,
+    "t_leetify": -0.0561
+  },
+  "stats": {
+    "accuracy_enemy_spotted": 20.6634,
+    "accuracy_head": 17.4491,
+    "counter_strafing_good_shots_ratio": 52.1564,
+    "ct_opening_aggression_success_rate": 12.3926,
+    "ct_opening_duel_success_percentage": 19.7074,
+    "flashbang_hit_foe_avg_duration": 2.7324,
+    "flashbang_hit_foe_per_flashbang": 0.6655,
+    "flashbang_hit_friend_per_flashbang": 0.3613,
+    "flashbang_leading_to_kill": 5.084,
+    "flashbang_thrown": 15.9466,
+    "he_foes_damage_avg": 7.959,
+    "he_friends_damage_avg": 0.4223,
+    "preaim": 16.6821,
+    "reaction_time_ms": 835.6902,
+    "spray_accuracy": 24.8092,
+    "t_opening_aggression_success_rate": 13.3102,
+    "t_opening_duel_success_percentage": 13.3102,
+    "traded_deaths_success_percentage": 43.9395,
+    "trade_kill_opportunities_per_round": 0.236,
+    "trade_kills_success_percentage": 38.6428,
+    "utility_on_death_avg": 209.2169
+  }
+};
+</script>
+
+<!-- ═══════════════════════════════════════════════════════════
+     Render engine – turns the embed object into Discord HTML
+════════════════════════════════════════════════════════════ -->
+<script>
+// ── Discord markdown mini-renderer ───────────────────────────────────────────
+function renderMarkdown(text) {
+  // Bold: **text**
+  text = text.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+  // Underline: __text__
+  text = text.replace(/__(.+?)__/g, '<span class="dc-underline">$1</span>');
+  // Inline links: [label](url)
+  text = text.replace(/\[(.+?)\]\((.+?)\)/g,
+    '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>');
+  return text;
+}
+
+// ── Colour int → CSS hex ──────────────────────────────────────────────────────
+function colorToCss(int) {
+  return '#' + int.toString(16).padStart(6, '0');
+}
+
+// ── Render a single embed object ──────────────────────────────────────────────
+function renderEmbed(embed) {
+  const accentColor = embed.color ? colorToCss(embed.color) : '#5865f2';
+
+  // Author
+  let authorHtml = '';
+  if (embed.author) {
+    const iconHtml = embed.author.icon_url
+      ? `<img src="${embed.author.icon_url}" alt="" onerror="this.style.display='none'" />`
+      : '';
+    const nameHtml = embed.author.url
+      ? `<a class="embed-author-name" href="${embed.author.url}" target="_blank">${embed.author.name}</a>`
+      : `<span class="embed-author-name">${embed.author.name}</span>`;
+    authorHtml = `<div class="embed-author">${iconHtml}${nameHtml}</div>`;
+  }
+
+  // Description
+  let descHtml = '';
+  if (embed.description) {
+    descHtml = `<div class="embed-description">${renderMarkdown(embed.description)}</div>`;
+  }
+
+  // Fields
+  // We lay them out replicating Discord's logic:
+  //   - inline fields share a row of up to 3
+  //   - non-inline fields take the full row
+  let fieldsHtml = '';
+  if (embed.fields && embed.fields.length) {
+    // Collect rows
+    const rows = [];
+    let currentRow = [];
+
+    for (const field of embed.fields) {
+      if (!field.inline) {
+        if (currentRow.length) { rows.push({ type: 'inline', fields: currentRow }); currentRow = []; }
+        rows.push({ type: 'full', fields: [field] });
+      } else {
+        currentRow.push(field);
+        if (currentRow.length === 3) { rows.push({ type: 'inline', fields: currentRow }); currentRow = []; }
+      }
+    }
+    if (currentRow.length) rows.push({ type: 'inline', fields: currentRow });
+
+    const fieldItems = rows.map(row => {
+      if (row.type === 'full') {
+        const f = row.fields[0];
+        // Invisible spacer – render nothing visible
+        if (f.name === '\u200B' && f.value === '\u200B') return '';
+        return `
+          <div class="embed-field full-width">
+            <div class="embed-field-name">${f.name}</div>
+            <div class="embed-field-value">${renderMarkdown(f.value)}</div>
+          </div>`;
+      }
+      // inline row: wrap in a sub-grid of 1–3 columns
+      const cols = row.fields.length;
+      const style = `grid-column: 1 / -1; display: grid; grid-template-columns: repeat(${cols}, minmax(0,1fr)); gap: 8px;`;
+      const inner = row.fields.map(f => `
+        <div class="embed-field">
+          <div class="embed-field-name">${f.name}</div>
+          <div class="embed-field-value">${renderMarkdown(f.value)}</div>
+        </div>`).join('');
+      return `<div style="${style}">${inner}</div>`;
+    }).join('');
+
+    fieldsHtml = `<div class="embed-fields">${fieldItems}</div>`;
+  }
+
+  // Footer
+  let footerHtml = '';
+  if (embed.footer) {
+    const ts = embed.timestamp
+      ? ' · ' + new Date(embed.timestamp).toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' })
+      : '';
+    const iconHtml = embed.footer.icon_url
+      ? `<img src="${embed.footer.icon_url}" alt="" onerror="this.style.display='none'" />`
+      : '';
+    footerHtml = `
+      <div class="embed-footer">
+        ${iconHtml}
+        <span class="embed-footer-text">${embed.footer.text}${ts}</span>
+      </div>`;
+  }
+
+  return `
+    <div class="dc-embed" style="border-left-color:${accentColor}">
+      <div class="dc-embed-inner">
+        ${authorHtml}
+        ${descHtml}
+        ${fieldsHtml}
+        ${footerHtml}
+      </div>
+    </div>`;
+}
+
+// ── Syntax-highlight JSON for the inspector ───────────────────────────────────
+function highlightJson(json) {
+  return json
+    .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+    .replace(/("(\\u[a-fA-F0-9]{4}|\\[^u]|[^\\"])*"(\s*:)?|\b(true|false|null)\b|-?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?)/g, match => {
+      if (/^"/.test(match)) {
+        if (/:$/.test(match)) return `<span class="jk">${match}</span>`;
+        return `<span class="js">${match}</span>`;
+      }
+      if (/true|false|null/.test(match)) return `<span class="jb">${match}</span>`;
+      return `<span class="jn">${match}</span>`;
+    });
+}
+
+// ── Boot ──────────────────────────────────────────────────────────────────────
+(function boot() {
+  // 1. Build the embed object using the real builder
+  const payload = buildProfileEmbed(CVS_DATA, { clanTag: '' });
+  const embed   = payload.embeds[0];
+
+  // 2. Render embed into Discord UI
+  document.getElementById('embed-mount').innerHTML = renderEmbed(embed);
+
+  // 3. Timestamp in message meta
+  document.getElementById('msg-timestamp').textContent =
+    'Today at ' + new Date().toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' });
+
+  // 4. Populate JSON inspector (omit huge field list for readability – show full)
+  const jsonStr = JSON.stringify(payload, null, 2);
+  document.getElementById('json-output').innerHTML = highlightJson(jsonStr);
+})();
+</script>
+
+</body>
+</html>
