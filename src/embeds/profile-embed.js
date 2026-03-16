@@ -110,28 +110,28 @@ function buildProfileEmbed(data, opts = {}) {
   const fields = [
     // ── Row 1a (3) ──────────────────────────────────────────────────────
     {
-      name: 'AIM',
+      name: '🎯 AIM',
       value: fmt(rating.aim),
       inline: true,
     },
     {
-      name: 'CLUTCH',
+      name: '🧊 CLUTCH',
       value: signed(rating.clutch),
       inline: true,
     },
     {
-      name: 'RATING',
+      name: '📈 RATING',
       value: signed(avgRating),
       inline: true,
     },
     // ── Row 1b (2 + pad) ────────────────────────────────────────────────
     {
-      name: 'TIME TO DMG',
+      name: '⚡ TIME TO DMG',
       value: `${Math.round(stats.reaction_time_ms)}ms`,
       inline: true,
     },
     {
-      name: 'WINRATE',
+      name: '🏆 WINRATE',
       value: `${ctWin}% / ${tWin}%`,
       inline: true,
     },
@@ -139,28 +139,28 @@ function buildProfileEmbed(data, opts = {}) {
 
     // ── Row 2a (3) ──────────────────────────────────────────────────────
     {
-      name: 'UTILITY',
+      name: '💣 UTILITY',
       value: fmt(rating.utility),
       inline: true,
     },
     {
-      name: 'OPENING',
+      name: '⚔️ OPENING',
       value: signed(rating.opening),
       inline: true,
     },
     {
-      name: 'PARTY',
+      name: '🎉 PARTY',
       value: partyScore,
       inline: true,
     },
     // ── Row 2b (2 + pad) ─────────────────────────────────────────────────
     {
-      name: 'AVG HE DMG',
+      name: '💥 AVG HE DMG',
       value: heDmg,
       inline: true,
     },
     {
-      name: 'MATCHES',
+      name: '🎮 MATCHES',
       value: `__${data.total_matches}__ / ${banPct}%`,
       inline: true,
     },
@@ -168,28 +168,28 @@ function buildProfileEmbed(data, opts = {}) {
 
     // ── Row 3a (3) ──────────────────────────────────────────────────────
     {
-      name: 'POSITION',
+      name: '📍 POSITION',
       value: fmt(rating.positioning),
       inline: true,
     },
     {
-      name: 'KD',
+      name: '💀 KD',
       value: kdRatio,
       inline: true,
     },
     {
-      name: 'PREAIM',
+      name: '📐 PREAIM',
       value: `${fmt(stats.preaim, 2)}°`,
       inline: true,
     },
     // ── Row 3b (2 + pad) ─────────────────────────────────────────────────
     {
-      name: 'PEAK RATING',
+      name: '🏔️ PEAK RATING',
       value: peakLabel,
       inline: true,
     },
     {
-      name: 'BANNED MATES',
+      name: '🚫 BANNED MATES',
       value: bannedMatesPct,
       inline: true,
     },

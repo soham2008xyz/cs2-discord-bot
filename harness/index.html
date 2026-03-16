@@ -498,23 +498,23 @@ function buildProfileEmbed(data, opts = {}) {
   const SPACER = { name: '\u200B', value: '\u200B', inline: false };
 
   const fields = [
-    { name: 'AIM',         value: fmt(rating.aim),                               inline: true },
-    { name: 'CLUTCH',      value: signed(rating.clutch),                          inline: true },
-    { name: 'RATING',      value: signed(avgRating),                              inline: true },
-    { name: 'TIME TO DMG', value: `${Math.round(stats.reaction_time_ms)}ms`,      inline: true },
-    { name: 'WINRATE',     value: `${ctWin}% / ${tWin}%`,                         inline: true },
+    { name: '🎯 AIM',         value: fmt(rating.aim),                               inline: true },
+    { name: '🧊 CLUTCH',      value: signed(rating.clutch),                          inline: true },
+    { name: '📈 RATING',      value: signed(avgRating),                              inline: true },
+    { name: '⚡ TIME TO DMG', value: `${Math.round(stats.reaction_time_ms)}ms`,      inline: true },
+    { name: '🏆 WINRATE',     value: `${ctWin}% / ${tWin}%`,                         inline: true },
     SPACER,
-    { name: 'UTILITY',     value: fmt(rating.utility),                            inline: true },
-    { name: 'OPENING',     value: signed(rating.opening),                         inline: true },
-    { name: 'PARTY',       value: partyScore,                                     inline: true },
-    { name: 'AVG HE DMG',  value: heDmg,                                          inline: true },
-    { name: 'MATCHES',     value: `__${data.total_matches}__ / ${banPct}%`,        inline: true },
+    { name: '💣 UTILITY',     value: fmt(rating.utility),                            inline: true },
+    { name: '⚔️ OPENING',     value: signed(rating.opening),                         inline: true },
+    { name: '🎉 PARTY',       value: partyScore,                                     inline: true },
+    { name: '💥 AVG HE DMG',  value: heDmg,                                          inline: true },
+    { name: '🎮 MATCHES',     value: `__${data.total_matches}__ / ${banPct}%`,        inline: true },
     SPACER,
-    { name: 'POSITION',    value: fmt(rating.positioning),                        inline: true },
-    { name: 'KD',          value: kdRatio,                                        inline: true },
-    { name: 'PREAIM',      value: `${fmt(stats.preaim, 2)}°`,                     inline: true },
-    { name: 'PEAK RATING', value: peakLabel,                                      inline: true },
-    { name: 'BANNED MATES',value: bannedMatesPct,                                 inline: true },
+    { name: '📍 POSITION',    value: fmt(rating.positioning),                        inline: true },
+    { name: '💀 KD',          value: kdRatio,                                        inline: true },
+    { name: '📐 PREAIM',      value: `${fmt(stats.preaim, 2)}°`,                     inline: true },
+    { name: '🏔️ PEAK RATING', value: peakLabel,                                      inline: true },
+    { name: '🚫 BANNED MATES',value: bannedMatesPct,                                 inline: true },
   ];
 
   const embed = {
